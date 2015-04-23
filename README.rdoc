@@ -1,1 +1,20 @@
 == Mini Blog em Rails
+
+A aplicação contem:
+
+* Listagem com todas as postagens do sistema;
+* Formulario no rodape da pagina para envio de uma nova postagem;
+* Uso de autenticacao com Devise https://github.com/plataformatec/devise
+
+Validações
+
+* Tamanho da postagem em 500 caracteres;
+* Presença do nome e do texto da postagem;
+
+Features
+
+* Utiliza Twitter Bootstrap;
+* Testes unitários e de aceitação. Rspec, Capybara;
+
+
+
