@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "posts/edit", type: :view do
   before(:each) do
-    @post = assign(:post, Post.create!())
+    @post = assign(:post, Post.create!(author: "John Doe", text:"description"))
   end
 
   it "renders the edit post form" do
