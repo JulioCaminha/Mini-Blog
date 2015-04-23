@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+group :production do
+  gem 'rails_12factor'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -26,8 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise
 gem 'devise'
 
-#rails_12factor
-gem 'rails_12factor'
 
 # gem bootstrap
 gem 'bootstrap-sass', '~> 3.3.4.1'
