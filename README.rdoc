@@ -19,7 +19,8 @@ Features
 Configuraçao
 
 * Deve rodar: bundle install
-* Criar o banco e executar as migrations: rake db:create e rake db:migrate 
+* Criar o banco e executar as migrations: rake db:create e rake db:migrate
+* Executar os testes: rspec spec
 * Rodar o servidor: rails s
 
 Live Demo
