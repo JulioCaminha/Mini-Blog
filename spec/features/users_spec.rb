@@ -34,7 +34,6 @@ describe "Non User Login" do
 
     it "should not allow non users to sign in" do
       visit new_user_session_path
-      save_and_open_page
       fill_in "user_login", :with => "Invalid User"
       fill_in "Password", :with => "fakepassword"
       click_button "Log in"
