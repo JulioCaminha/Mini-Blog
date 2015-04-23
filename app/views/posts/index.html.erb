@@ -2,12 +2,20 @@
 
 <h1>Listing Posts</h1>
 
-  <% @posts.each do |post| %>
-         <div id= "post">
-            <p>Text: <%= post.text %></p>
-            <p>Author: <%= post.author %></p>
-         </div>
+
+
+  <% @posts.order("created_at desc").each do |post| %>
+        <div id= "post">
+          <p><%= post.text %></p>
+          <strong><p>by <%= post.author %> at <%= post.created_at %></p></strong>
+
+          <br><br>
+
+        </div>
+        
   <% end %>
+  
+    
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+
