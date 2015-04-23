@@ -22,5 +22,9 @@ Configuraçao
 * Criar o banco e executar as migrations: rake db:create e rake db:migrate 
 * Rodar o servidor: rails s
 
+Live Demo
+
+* https://tranquil-reaches-4433.herokuapp.com
+
 
 
