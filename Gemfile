@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise
 gem 'devise'
 
+#rails_12factor
+gem 'rails_12factor'
+
 # gem bootstrap
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'autoprefixer-rails'
