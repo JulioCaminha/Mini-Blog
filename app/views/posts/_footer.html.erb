@@ -1,3 +1,20 @@
+<script type="text/javascript">
+      var info;
+      $(document).ready(function(){
+
+        var options3 = {
+            'maxCharacterSize': 500,
+            'originalStyle': 'originalTextareaInfo',
+            'warningStyle' : 'warningTextareaInfo',
+            'warningNumber': 40,
+            'displayFormat' : '#left Characters Left / #max'
+        };
+        $('#post_text').textareaCount(options3, function(data){
+          $('#showData').html(data.input + " characters input. <br />" + data.left + " characters left. <br />" + data.max + " max characters. <br />" + data.words + " words input.");
+        });
+      });
+</script>
+
 <%= form_for Post.new do |f| %>
   
   <% if user_signed_in? %>
