@@ -20,7 +20,7 @@ Configuraçao
 
 * Deve rodar: bundle install
 * Criar o banco e executar as migrations: rake db:create e rake db:migrate 
-* Rodar o servidor rails s
+* Rodar o servidor: rails s
 
 
 
