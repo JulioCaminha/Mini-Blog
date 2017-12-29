@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Devise
-gem 'devise'
+gem 'devise', '4.3.0'
 
 
 # gem bootstrap
