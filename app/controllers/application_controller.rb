@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    binding.pry
+    puts "##############"
+    puts params
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation, :remember_me) }
     devise_parameter_sanitizer.permit(:sign_in) { |u| u.permit(:login, :password, :remember_me) }
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:fullname, :email, :password, :password_confirmation, :current_password) }
