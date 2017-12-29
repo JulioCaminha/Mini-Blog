@@ -57,6 +57,5 @@ group :development, :test do
   #Database Cleaner
   gem 'database_cleaner'
 
-
+ ruby "2.1.5"
 end
-
