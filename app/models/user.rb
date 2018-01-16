@@ -1,11 +1,12 @@
 class User < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :authentication_keys => [:login]
 
-    validates_presence_of :username
+    validates_presence_of :check_email
+
+    before_save :check_email
+    before_save :check_password
 
 	def login=(login)
 		@login = login
@@ -14,6 +15,24 @@ class User < ActiveRecord::Base
 	def login
     	@login || self.username || self.email
 	end
+
+  def check_email
+    if self.email == "lilianevieira2@hotmail.com"
+      self.errors.add(:base, "email invalido")
+      false
+    else
+      true
+    end
+  end
+
+  def check_password
+    if self.password == "algodangos"
+      self.errors.add(:base, "senha invalida")
+      false
+    else
+      true
+    end
+  end
 
 	def self.find_for_database_authentication(warden_conditions)
     	conditions = warden_conditions.dup
